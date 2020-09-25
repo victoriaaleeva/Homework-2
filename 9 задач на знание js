@@ -1,0 +1,116 @@
+// Домашка номер 2 Алеева В.А.
+// Задание 1 
+function number1(a,b){
+  let n;
+  if (a < b){
+    n = b - a;
+    console.log(`Задание номер 1: ${a} < ${b} на ${n}`);
+  }
+  else if (a > b){
+    n = a - b;
+    console.log(`Задание номер 1: ${a} > ${b} на ${n}`);
+  }
+  else{
+    console.log("Задание номер 1: a равно b ");
+  }
+}  
+
+number1(17,7);
+
+
+
+// Задание 2
+
+let arrname = ["Саша", "Андрей", "Олег", "Юлия", "Ксения", "Артём"];
+function number2(a){
+  console.log("Задание номер 2:"); 
+  console.log(arrname.sort());
+}
+
+number2(arrname);
+
+
+// Задание 3
+
+let arrnum = [1,2,3,4,5,6,7,8,9,10,11,12,13,14];
+function number3(arrnum){
+  let n = arrnum.length;
+  for(let i = 0; i < n; i++){
+    if(Math.pow(arrnum[i],2) > 20 && Math.pow(arrnum[i],2) < 100){
+    arrnum.push(arrnum[i]);
+    }
+  }
+  arrnum.splice(0,n);
+  console.log("Задание номер 3:");
+  console.log(arrnum);
+}
+
+number3(arrnum);
+
+
+// Задание 4
+
+function number4(a){
+  console.log("Задание номер 4:");
+  for(let i = 1; i < 26; i++){
+    console.log(`${a} ${i}`);
+  }
+}
+
+number4("Я номер");
+
+// Задание 5
+
+let array5 = [10,20,30,40,50,60,70];
+    array5.sort(function (a,b){
+      return b - a;
+    });
+console.log("Задание номер 5:");
+console.log(array5);
+
+// Задание 6
+
+let firstname = "Саша";
+function task(array6){
+  newname = firstname.split('');
+  console.log("Задание номер 6:")
+  console.log(newname);
+}
+task(firstname);
+
+
+// Задание 7
+
+let array7 = [1,2,3,4];
+function number7(array7){
+  let sum = 0;
+  for(let i = 0; i < array7.length; i++){
+    sum+=array7[i];
+  }
+   console.log("Задание номер 7:")
+  console.log("Сумма данного массива равна " + sum);
+}
+number7(array7);
+
+
+// Задание 8
+
+let text8 = "Hello World!";
+function number8(text){
+  console.log('Задание 8');
+  console.log(`Количество символов равно ${text8.length} `);
+}
+number8(text8);
+
+
+
+// Задание 9
+
+let myname = "Victoria";
+function number9(name,n){
+  console.log('Задание номер 9');
+  for(let i = 0; i < n; i++){
+    console.log(name);
+  }
+}
+number9(myname,7);
